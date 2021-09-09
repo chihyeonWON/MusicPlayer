@@ -2,14 +2,61 @@
 
 /* 3단계 */
 * {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-ul, ol, li {
-	list-style: none;
+ul,
+ol,
+li {
+  list-style: none;
 }
 a {
-	text-decoration: none;
-	outline: 0;
+  text-decoration: none;
+  outline: 0;
+}
+figure {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(25deg, violet, pink);
+}
+figure h1 {
+  position: absolute;
+  top: 7vh;
+  left: 4vw;
+  font-size: 0; /* 높이 오류 방지 */
+}
+figure h1 strong {
+  font-size: 36px;
+  font-family: "arial";
+  color: #fff;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+figure h1 span {
+  font-size: 12px;
+  font-family: "arial";
+  color: #fff;
+  opacity: 0.8;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+figure .menu {
+  position: absolute;
+  top: 8vh;
+  right: 4vw;
+  font-size: 24px;
+  color: #fff;
+}
+figure > p {
+  position: absolute;
+  bottom: 7vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font: 12px/1 "arial";
+  color: #fff;
+  letter-spacing: 2px;
+  opacity: 0.8;
 }
