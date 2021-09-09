@@ -60,3 +60,40 @@ figure > p {
   letter-spacing: 2px;
   opacity: 0.8;
 }
+
+figure section {
+  /* 음악 플레이어 패널 프레임 그룹 */
+  width: 20vw;
+  height: 65vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -32vh;
+  margin-left: -10vw;
+  border: 1px solid aqua;
+}
+
+figure section article {
+  /* 개별 음악 플레이어 패널 */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+figure section article .inner {
+  /* 음악 플레이어 패널 콘텐츠 그룹 */
+  width: 100%;
+  height: 100%;
+  background: #f0f7ff;
+  padding: 5vh 2.5vw 8vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content:center;
+  align-content:space-between /* 자식 콘텐츠의 안쪽 세로 여백을 균등 배치 */
+  flex-wrap:wrap;
+  boder-radius:10px;
+  box-shadow:10px 10px 20px rgba(0,0,0,0.1);
+  opacity:0.6; /* 투명도를 낮춰서 비활성화 */
+  transform:scale(0.8); /* 축소 시켜서 비활성화 */
+}
