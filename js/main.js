@@ -6,7 +6,9 @@ let i = 0;
 
 //article의 개수만큼 반복
 for(let el of lists){
+    let pic = el.querySelector(".pic");
     //각 article 요소를 45씩 회전하고 아래로 배치
     el.style.transform = `rotate(${deg*i}deg) translateY(-100vh)`;
+    pic.style.backgroundImage = `url(../img/member${i+1}.jpg)`; /* 배경 이미지 추가 */
     i++
 }

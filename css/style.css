@@ -101,3 +101,43 @@ figure section article.on .inner{
   opacity:0.9;
   transform:scale(1.1);
 }
+figure section article .inner .pic{
+  width:15vw;
+  height:15vw;
+  margin:0px auto;
+  border-radius:50%;
+  background-repeat:no-repeat;
+  background-position:200%; /* 배경 이미지 위치값을 조절하여 .pic 요소의 이미지 숨김 */
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+figure section article .inner .pic::before, figure section article .inner .pic::after{
+  content:"";
+  display:block;
+  width:inherit;
+  height:inherit;
+  border-radius:inherit;
+  position:absolute;
+  top:0px;
+  left:0px;
+  background-image:inherit; /* 부모 요소 .pic으로부터 이미지 상속 */
+  background-position:center;
+  background-repeat:inherit;
+  background-size:cover;
+  transform-origin:center center;
+}
+figure section article .inner .pic::before{
+  transform:translateY(10%);
+  filter:blur(20px) brightness(1.6); /* 이미지를 블러 처리하고 발게 적용 */
+}
+figure section article .inner .pic .dot{
+  width:3vw;
+  height:3vw;
+  border-radius:50%;
+  background:#e4f1ff;
+  position:relative;
+  z-index:3;
+  box-shadow:inset 5px 5px 10px rgba(0,0,0,0.1); /* inset으로 안쪽 그림자 생성 */
+}
