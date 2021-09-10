@@ -95,4 +95,9 @@ figure section article .inner {
   box-shadow:10px 10px 20px rgba(0,0,0,0.1);
   opacity:0.6; /* 투명도를 낮춰서 비활성화 */
   transform:scale(0.8); /* 축소 시켜서 비활성화 */
+  transition:opacity 1s, transform 1s;
+}
+figure section article.on .inner{
+  opacity:0.9;
+  transform:scale(1.1);
 }
