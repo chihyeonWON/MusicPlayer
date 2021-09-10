@@ -67,10 +67,9 @@ figure section {
   height: 65vh;
   position: absolute;
   left: 50%;
-  top: 50%;
-  margin-top: -32vh;
+  top: 140%; /* 가로 위치값 조절 */
+  margin-top: -25vh; /* 세로 위치값 조절 */
   margin-left: -10vw;
-  border: 1px solid aqua;
 }
 
 figure section article {
