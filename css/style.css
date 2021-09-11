@@ -178,3 +178,30 @@ figure section article .inner .txt ul li.play:hover {
   transform: scale(2); /* 재생 버튼은 마우스 호버 시 2배로 확대 */
   opacity: 1;
 }
+
+@keyframes ani {
+  /* 앨범 커버 이미지 회전 키프레임 */
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ani2 {
+  /* 앨범 커버 그림자 회전 키프레임 */
+  0% {
+    transform: translateY(10%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10%) rotate(360deg);
+  }
+}
+
+figure section article .inner .pic.on::after {
+  animation: ani 4s linear infinite;
+}
+figure section article .inner .pic.on::before {
+  animation: ani2 4s linear infinite;
+}
