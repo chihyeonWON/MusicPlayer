@@ -40,4 +40,20 @@ for(let el of lists){
         e.currentTarget.closest("article").querySelector("audio").load();
         e.currentTarget.closest("article").querySelector("audio").play();
     });
+
+    /* 버튼 제어 구문 */
+    const prev = document.querySelector(".btnPrev");
+    const next = document.querySelector(".btnNext");
+    
+    let num=0;
+
+    prev.addEventListener("click", ()=>{
+        num++;
+        frame.style.transform = `rotate(${deg * num}deg)`;   
+    });
+
+    next.addEventListener("click", ()=>{
+        num--;
+        frame.style.transform = `rotate(${deg * num}deg)`;  
+    })
 }
